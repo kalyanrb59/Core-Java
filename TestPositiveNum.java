@@ -9,7 +9,7 @@ class  PositiveNum{
 		if(num>0){
 			return num*2;
 		}
-		return num;
+		return num/2;
 	}
 	
 }
