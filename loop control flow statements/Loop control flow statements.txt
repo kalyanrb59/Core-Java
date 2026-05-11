@@ -1,0 +1,92 @@
+- The while, do...while and for are called loop or itarative 
+  control flow statements,
+- The loop control flow statements are used for executing a block of 
+  statements 0 to n number of times
+- the loop control flow statements execute the block of statements repetedly 
+  until condition is true.
+- Once the condition value is false it terminates execution and allows execute 
+  the rest of the statements placed after loop block.
+- The syntaxes of while, do...while and for loops
+
+1. while loop syntax:
+===================
+while(condition){
+--------------------
+logic
+--------------------
+}
+
+
+2. do...while loop syntax:
+=======================
+do{
+---------------------
+      logic
+---------------------
+}
+
+3. for loop syntax:
+================
+
+for(initilization;condition;inc/dec){
+-------------------------------------
+             logic
+-------------------------------------
+}
+
+- Every loop has three inputs for executing a block of statements repetedly
+	1. Start value
+	2. Condition with end value
+	3. inc/dec start value towards end value
+- while is used when we need to check only condition
+	it execute the logic 0 times to n number of times.
+- for is used when we need to create start value, end value and inc/dec all three
+	in one line. It execute the logic 0 times to number of times.
+- do is used when we want to execute at leaset one time. First it will execute one time
+	then it will go for the checking condition. It will execute at least one time.
+	
+Working with while:
+===================
+- the while is used for executing a block of statements 0 to n number of times.
+- It is best suitable when we need to check only condition, the start value, end value 
+  and inc/dec are decided by other programmer.
+  For example: 
+	for reading file content or object from a collection or rows from Database we must use while loop, 
+	because we need to check only whether
+		1. condition is there or not in the file
+		2. Objects are there or not in the collection
+		3. rows are there or not in the database.
+- In file IO, collections and JDBC we will learn above topics
+- In this chapter we will use while by creating start, end and inc/dec.
+
+Problem with while loop:
+========================
+- It may leads to infinet loop, because we may forget to inc/dec variable value.
+- There is a chance we may forget to inc/dec variable value because the variable declaration, 
+  variable condition and variable inc/dec, all three are in three different places.
+- So the solution is using for-loop.
+
+Working with for loop:
+======================
+
+for(initilization; condition; inc/dec){
+---------------------------------------
+               body
+---------------------------------------	       
+}
+
+- in for-loop all three parst initilization (start), condition (end) and inc/dec
+  are in the same line. So no chance to forget inc/dec loop.
+- When we need to execute a block of statements on a range base, then we use for-loop.
+
+Problem with for-loop:
+======================
+- Both while and for execute the block of statements only after checking condition.
+- The do...while first execute the logic and then check the condition.
+- It means,
+	- while or for executes block of statements 0 to n number of times
+	- Where as do...while executes block of statements 1 to n number of times.
+For example:
+============
+	- For reading student data from keyboard, we must use do...while, for reading 
+	  at least one student data.
