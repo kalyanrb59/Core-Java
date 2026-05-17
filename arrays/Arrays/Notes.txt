@@ -1,0 +1,14 @@
+When we work with array we must perform below operations:
+	1. Declaration of array			Creating array			 : vari DT[] varName;
+	2. Creating array object		Allocating memory locations	 : varName = new DT[5]; 
+	3. Initilizing array object		Storing values in array location : varName[index]= value;
+	4. Reading array values			Taking values from array location: varName[index];
+	5. Modifying array values		Checking existing value in array location : varName[index]=value;
+	6. Searching values in array
+	
+	
+		int[] ia;
+		Sopln(ia[0]); CE: variable ia might not have been initilized
+		
+		ia = new int[0];
+		Sopln(ia[0]); -----------> No CE. but RE:AIOOBE(ArrayIndexOutOfBoundsException)
