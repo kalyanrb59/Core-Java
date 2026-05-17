@@ -41,6 +41,11 @@ class Test08_ArrayObjectAsArgumentAndReturnValue3 {
 		
 		//m1(ia2); // we can use directly for loop or m1(ia2); or m1(m4());
 		//=======================================================
+		
+		m1(m2());
+		System.out.println();
+		m1(m4());
+		System.out.println();
 	}
 	
 	static void m1(int[] ia){
