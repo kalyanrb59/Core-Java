@@ -13,8 +13,6 @@ class  AO{
 			return null;
 		}if(ia.length==0){
 			return ia;
-		}if(ia.length==1){
-			return new int[]{ia[0], ia[0], ia[0]};
 		}
 		// the below approach is wrong. we will get false results
 		/* 
@@ -23,7 +21,7 @@ class  AO{
 		int mul =0; 
 		*/
 		
-		int sub, sum, mul;
+		int sum, sub, mul;
 		sum = sub = mul = ia[0];
 		
 		for(int i=1; i<ia.length; i++){
@@ -48,7 +46,7 @@ class Test09_AddSubMulWithArray{
 		
 		res = AO.ao(new int[]{3});
 		System.out.println(java.util.Arrays.toString(res));
-		
+		 
 		res = AO.ao(new int[]{3, 4});
 		System.out.println(java.util.Arrays.toString(res));
 		
